@@ -2,6 +2,7 @@
 
 body {
   font-family: "PT Sans Caption", sans-serif;
+  background-color: #f7ecde;
 }
 
 ::selection {
@@ -9,19 +10,18 @@ body {
   color: #352e28;
 }
 
-main {
+.bookmark {
   min-height: 100vh;
-  background-color: #f7ecde;
 }
 
-main h1 {
+.bookmark h1 {
   font-size: 50px;
   font-family: "Pacifico", cursive;
   color: #352e28;
   isolation: isolate;
 }
 
-main h1::before {
+.bookmark h1::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -33,7 +33,7 @@ main h1::before {
   z-index: -1;
 }
 
-main h1:hover::before {
+.bookmark h1:hover::before {
   height: 50%;
 }
 
@@ -96,8 +96,8 @@ table {
 }
 
 .box-conent {
-  width: 500px;
   z-index: 10;
+  padding: 50px 0;
 }
 
 .box-conent p {
